@@ -70,13 +70,13 @@ function questionClick() {
         }
         // display new time on page
         timerEl.textContent = time;
-        feedbackEl.textContent = "Wrong!";
-        feedbackEl.style.color = "#e0c002";
-        feedbackEl.style.fontSize = "150%";
+        feedbackEl.textContent = "Incorrect";
+        feedbackEl.style.color = "black";
+        feedbackEl.style.fontSize = "50%";
     } else {
         feedbackEl.textContent = "Correct!";
-        feedbackEl.style.color = "#28368f";
-        feedbackEl.style.fontSize = "150%";
+        feedbackEl.style.color = "black";
+        feedbackEl.style.fontSize = "50%";
     }
 
     // flash right/wrong feedback
@@ -143,7 +143,7 @@ function saveHighscore() {
         window.localStorage.setItem("highscores", JSON.stringify(highscores));
 
         // redirect to next page
-        window.location.href = "score.html";
+        window.location.href = "scores.html";
     }
 }
 
