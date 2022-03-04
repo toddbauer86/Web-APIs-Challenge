@@ -1,1 +1,0 @@
-This is a readme doc for my web api challenge, in progress
